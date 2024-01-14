@@ -5,6 +5,7 @@ namespace PeachGUI
         public ProjectSetup()
         {
             InitializeComponent();
+            CreateProjectBtn.Enabled = false;
         }
     }
 }
