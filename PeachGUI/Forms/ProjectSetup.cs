@@ -16,5 +16,15 @@ namespace PeachGUI
 
             ProjectDirectoryTbx.Text = defaultProjectDirectory;
         }
+
+        // Create project
+        private void CreateProjectBtn_Click(object sender, EventArgs e)
+        {
+            projectName = ProjectNameTbx.Text.Trim();
+            projectLanguage = ProjectTemplateDd.Text.Trim().ToLower();
+            projectDirectory = ProjectDirectoryTbx.Text.Trim();
+
+            ProjectManager.CreateProject(projectName, projectDirectory, projectLanguage);
+        }
     }
 }

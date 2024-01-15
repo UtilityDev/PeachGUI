@@ -5,7 +5,19 @@ namespace PeachGUI.Classes
 {
     public static class ProjectManager
     {
-        public static void CreateFile(string name, string path, string content)
+        public static void CreateProject(string projectName, string projectPath, string projectLanguage)
+        {
+            projectLanguage = projectLanguage.ToLower();
+            if (PullExtension(projectLanguage) != "")
+            {
+                string dir = Path.Combine(projectPath, projectName);
+                Directory.CreateDirectory(dir);
+
+                CreateFile($"main.{PullExtension(projectLanguage)}", dir);
+            }
+        }
+
+        public static void CreateFile(string name, string path, string content = "")
         {
             File.WriteAllText(Path.Join(path, name), content);
         }

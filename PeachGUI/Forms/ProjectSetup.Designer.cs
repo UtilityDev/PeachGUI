@@ -109,6 +109,7 @@
             ProjectTemplateDd.Anchor = AnchorStyles.Left;
             ProjectTemplateDd.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             ProjectTemplateDd.FormattingEnabled = true;
+            ProjectTemplateDd.Items.AddRange(new object[] { "C#", "C++", "C", "Python", "Kotlin", "Java", "Rust", "JavaScript", "CSS", "HTML", "F#", "Haskell", "Ruby", "Lua" });
             ProjectTemplateDd.Location = new Point(30, 196);
             ProjectTemplateDd.Name = "ProjectTemplateDd";
             ProjectTemplateDd.Size = new Size(222, 31);
@@ -123,6 +124,7 @@
             CreateProjectBtn.TabIndex = 7;
             CreateProjectBtn.Text = "Create Project!";
             CreateProjectBtn.UseVisualStyleBackColor = true;
+            CreateProjectBtn.Click += CreateProjectBtn_Click;
             // 
             // DirectoryBrowseBtn
             // 
