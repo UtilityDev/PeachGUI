@@ -24,7 +24,10 @@ namespace PeachGUI
             projectLanguage = ProjectTemplateDd.Text.Trim().ToLower();
             projectDirectory = ProjectDirectoryTbx.Text.Trim();
 
-            ProjectManager.CreateProject(projectName, projectDirectory, projectLanguage);
+            try
+            {
+                ProjectManager.CreateProject(projectName, projectDirectory, projectLanguage);
+            } catch { return; }
         }
     }
 }
