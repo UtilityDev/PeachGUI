@@ -109,7 +109,6 @@
             ProjectTemplateDd.Anchor = AnchorStyles.Left;
             ProjectTemplateDd.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             ProjectTemplateDd.FormattingEnabled = true;
-            ProjectTemplateDd.Items.AddRange(new object[] { "C", "C++", "C#", "MonoGame (C#)", "F#", "Lua", "Love2D (Lua)", "Raylib (C)", "Raylib (C++)", "Raylib (C#)", "Raylib (Go)", "Raylib (F#)", "MySQL", "PHP", "JavaScript" });
             ProjectTemplateDd.Location = new Point(30, 196);
             ProjectTemplateDd.Name = "ProjectTemplateDd";
             ProjectTemplateDd.Size = new Size(222, 31);
@@ -117,6 +116,7 @@
             // 
             // CreateProjectBtn
             // 
+            CreateProjectBtn.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
             CreateProjectBtn.Location = new Point(286, 102);
             CreateProjectBtn.Name = "CreateProjectBtn";
             CreateProjectBtn.Size = new Size(123, 31);
@@ -126,6 +126,7 @@
             // 
             // DirectoryBrowseBtn
             // 
+            DirectoryBrowseBtn.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
             DirectoryBrowseBtn.Location = new Point(286, 293);
             DirectoryBrowseBtn.Name = "DirectoryBrowseBtn";
             DirectoryBrowseBtn.Size = new Size(123, 31);
